@@ -70,15 +70,29 @@ visionHeader.textContent = siteContent["main-content"]["vision-h4"];
 const mainContentTexts = document.querySelectorAll(".main-content p");
 const featuresText = mainContentTexts[0];
 featuresText.textContent = siteContent["main-content"]["features-content"];
-const aboutText = mainContentTexts[0];
-featuresText.textContent = siteContent["main-content"]["features-content"];
-const featuresText = mainContentTexts[0];
-featuresText.textContent = siteContent["main-content"]["features-content"];
-const featuresText = mainContentTexts[0];
-featuresText.textContent = siteContent["main-content"]["features-content"];
-const featuresText = mainContentTexts[0];
-featuresText.textContent = siteContent["main-content"]["features-content"];
+const aboutText = mainContentTexts[1];
+aboutText.textContent = siteContent["main-content"]["about-content"];
+const servicesText = mainContentTexts[2];
+servicesText.textContent = siteContent["main-content"]["services-content"];
+const productText = mainContentTexts[3];
+productText.textContent = siteContent["main-content"]["product-content"];
+const visionText = mainContentTexts[4];
+visionText.textContent = siteContent["main-content"]["vision-content"];
+
+const middleImg = document.querySelector("#middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+const contactStuff = document.querySelectorAll(".contact p");
+const contactAddr = contactStuff[0];
+contactAddr.textContent = siteContent["contact"]["address"];
+const contactNum = contactStuff[1];
+contactNum.textContent = siteContent["contact"]["phone"];
+const contactMail = contactStuff[2];
+contactMail.textContent = siteContent["contact"]["email"];
 
+const copyrightStatement = document.querySelector("footer p");
+copyrightStatement.textContent = siteContent["footer"]["copyright"];
 
