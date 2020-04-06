@@ -40,3 +40,45 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navStrings = Object.values(siteContent["nav"]);
+
+const aTags = document.querySelectorAll("nav a");
+for (let i = 0; i < aTags.length; i++) {
+  aTags[i].textContent = navStrings[i];
+}
+
+const domIsAwesome = document.querySelector(".cta-text h1");
+domIsAwesome.textContent = siteContent["cta"]["h1"];
+const getStartedButton = document.querySelector(".cta-text button");
+getStartedButton.textContent = siteContent["cta"]["button"];
+const ctaImage = document.querySelector(".cta img");
+ctaImage.src = siteContent["cta"]["img-src"]; 
+
+const mainContentHeaders = document.querySelectorAll(".main-content h4");
+const featuresHeader = mainContentHeaders[0];
+featuresHeader.textContent = siteContent["main-content"]["features-h4"];
+const aboutHeader = mainContentHeaders[1];
+aboutHeader.textContent = siteContent["main-content"]["about-h4"];
+const servicesHeader = mainContentHeaders[2];
+servicesHeader.textContent = siteContent["main-content"]["services-h4"];
+const productHeader = mainContentHeaders[3];
+productHeader.textContent = siteContent["main-content"]["product-h4"];
+const visionHeader = mainContentHeaders[4];
+visionHeader.textContent = siteContent["main-content"]["vision-h4"];
+
+const mainContentTexts = document.querySelectorAll(".main-content p");
+const featuresText = mainContentTexts[0];
+featuresText.textContent = siteContent["main-content"]["features-content"];
+const aboutText = mainContentTexts[0];
+featuresText.textContent = siteContent["main-content"]["features-content"];
+const featuresText = mainContentTexts[0];
+featuresText.textContent = siteContent["main-content"]["features-content"];
+const featuresText = mainContentTexts[0];
+featuresText.textContent = siteContent["main-content"]["features-content"];
+const featuresText = mainContentTexts[0];
+featuresText.textContent = siteContent["main-content"]["features-content"];
+
+
+
+
