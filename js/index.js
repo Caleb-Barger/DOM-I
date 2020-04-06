@@ -46,7 +46,25 @@ const navStrings = Object.values(siteContent["nav"]);
 const aTags = document.querySelectorAll("nav a");
 for (let i = 0; i < aTags.length; i++) {
   aTags[i].textContent = navStrings[i];
+  aTags[i].style.color = "green";
 }
+
+const navContainer = document.querySelector("nav");
+
+const potatoLink = document.createElement("a");
+const biscutLink = document.createElement("a");
+
+potatoLink.textContent = "Potato";
+biscutLink.textContent = "Biscut";
+potatoLink.href = "https://image.shutterstock.com/image-photo/young-potato-isolated-on-white-600w-630239534.jpg";
+biscutLink.href = "#";
+potatoLink.style.color = "brown";
+biscutLink.style.color = "yellow";
+
+navContainer.append(potatoLink, biscutLink);
+
+
+
 
 const domIsAwesome = document.querySelector(".cta-text h1");
 domIsAwesome.textContent = siteContent["cta"]["h1"];
